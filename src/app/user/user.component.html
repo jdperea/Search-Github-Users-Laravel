@@ -1,0 +1,11 @@
+<article style="padding:40px;">
+  <div style="border: solid 1px #eee; padding:20px; width: 450px" *ngIf="user">
+    <img [src]="user.avatar_url" alt="avatar" />
+    <h2>{{ user?.login }}</h2>
+    <small> {{ user?.location }}</small>
+    <ul>
+      <li>Followers: {{ user?.followers }}</li>
+      <li>Following:: {{ user?.following }}</li>
+    </ul>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+<!-- {{users | json}} -->
+<article style="display: grid">
+  <h1>Usuarios que coinciden con la busqueda {{ users[0].total_count }}</h1>
+
+  <div
+    style="display: grid; grid-template-columns: 1fr 1fr 1fr 1fr; column-gap: 1rem;"
+    *ngIf="users[0].items"
+  >
+    <div *ngFor="let user of users[0].items">
+      <a routerLink="/user/{{ user?.login }}">{{ user?.login }} </a>
+      <div>
+        <img style="height: 80px" src="{{ user?.avatar_url }}" alt="avatar" />
+      </div>
+    </div>
+  </div>
+</article>
+
