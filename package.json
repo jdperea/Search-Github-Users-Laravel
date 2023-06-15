@@ -11,6 +11,8 @@
     "@angular/platform-browser": "8.2.14",
     "@angular/platform-browser-dynamic": "8.2.14",
     "@angular/router": "8.2.14",
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.3.0",
     "core-js": "2.6.12",
     "rxjs": "6.6.7",
     "tslib": "^2.5.3",

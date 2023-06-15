@@ -42,6 +42,7 @@
             "outputPath": "dist/demo",
             "scripts": [],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/global_styles.css"
             ],
             "tsConfig": "src/tsconfig.app.json"
@@ -89,6 +90,7 @@
             "polyfills": [],
             "scripts": [],
             "styles": [
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "styles.css"
             ],
             "tsConfig": "src/tsconfig.spec.json"
