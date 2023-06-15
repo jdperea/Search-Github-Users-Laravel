@@ -1,11 +1,12 @@
 <article style="padding:40px;">
-  <div style="border: solid 1px #eee; padding:20px; width: 450px" *ngIf="user">
-    <img [src]="user.avatar_url" alt="avatar" />
+  <div style="border: solid 1px #eee; padding:20px; width: 100%" *ngIf="user">
+    <img class="img-fluid" [src]="user.avatar_url" alt="avatar" />
     <h2>{{ user?.login }}</h2>
-    <small> {{ user?.location }}</small>
-    <ul>
-      <li>Followers: {{ user?.followers }}</li>
-      <li>Following:: {{ user?.following }}</li>
+    <small>{{ user?.location }}</small>
+    <ul class="list-group">
+      <li class="list-group-item">Followers: {{ user?.followers }}</li>
+      <li class="list-group-item">Following: {{ user?.following }}</li>
+      <li class="list-group-item">Repositories: {{ user?.public_repos }}</li>
     </ul>
   </div>
 </article>

@@ -2,7 +2,7 @@
 <article style="display: grid">
   <h1>Search for GitHub users!</h1>
   <div>
-    <input type="search" [(ngModel)]="userSearch" />
+    <input type="search" class="form-control" [(ngModel)]="userSearch" />
     <a [routerLink]="['/users', userSearch]" *ngIf="userSearch">Search</a>
   </div>
 </article>
